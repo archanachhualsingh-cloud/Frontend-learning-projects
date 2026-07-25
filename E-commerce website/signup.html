@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup | ShopNest</title>
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img
+          src="image/image.png"
+          alt="website logo"
+          title="shopNest-logo"
+          height="300"
+        />
+      </figure>
+      <h1>Sign Up</h1>
+      <p>Create an account:</p>
+    </header>
+    <main>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information:</legend>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            autocomplete="name"
+            required
+          />
+          <label for="user">Username:</label>
+          <input
+            type="text"
+            id="user"
+            name="username"
+            minlength="3"
+            maxlength="12"
+            placeholder="Enter an username"
+            autocomplete="username"
+            pattern="[A-Za-z0-9_$^]+"
+            title="Use only letters, numbers, $ ^ and _"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            autocomplete="email"
+            required
+          />
+          <label for="DOB">Date of birth</label>
+          <input type="date" id="DOB" name="dob" />
+          <label for="phone">Phone No.</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" />
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="">Select your country</option>
+            <optgroup label="Asian Country">
+              <option value="india">India</option>
+              <option value="south korea">South Korea</option>
+              <option value="japan">Japan</option>
+              <option value="jordan">Jordan</option>
+              <option value="bhutan">Bhutan</option>
+              <option value="kazakhstan">Kazakhstan</option>
+              <option value="turkey">Turkey</option>
+              <option value="maldives">Maldives</option>
+            </optgroup>
+            <optgroup label="European Country">
+              <option value="italy">Italy</option>
+              <option value="france">France</option>
+              <option value="norway">Norway</option>
+              <option value="bulgaria">Bulgaria</option>
+              <option value="romania">Romania</option>
+              <option value="iceland">Iceland</option>
+              <option value="united kingdom">United Kingdom</option>
+            </optgroup>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Security:</legend>
+          <p id="passwordHelp">Password must contain at least 8 characters</p>
+          <label for="passw">Password:</label>
+          <input
+            type="password"
+            id="passw"
+            name="password"
+            minlength="8"
+            aria-describedby="passwordHelp"
+            autocomplete="new-password"
+            required
+          />
+          <label for="conpassw">Confirm Password:</label>
+          <input
+            type="password"
+            id="conpassw"
+            name="confirmPassword"
+            autocomplete="new-password"
+            required
+          />
+        </fieldset>
+        <button type="submit">Create account</button>
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I agree to the Terms &amp; Conditions</label>
+        <p>Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+      </form>
+    </main>
+    <footer>
+      <p>© 2026 ShopNest. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
