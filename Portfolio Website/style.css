@@ -1,0 +1,30 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html{
+    background-color:rgb(16, 4, 94,0.90);
+    color:rgb(0,0,0,1);
+    margin: 5px;
+}
+header{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    line-height:4;
+}
+nav a{
+    text-decoration:none;
+}
+#home>div{
+    font-family:'Times New Roman', Times, serif;
+    font-size:25px;
+    padding:20px;
+    margin:8px;
+    border:2px outset black;
+    border-radius:20px;
+}
+#cont2{
+    padding: 20px;
+    
+}
